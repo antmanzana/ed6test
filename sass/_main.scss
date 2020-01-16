@@ -30,7 +30,7 @@ $font-gray: #414141;
 body {
   background: $background;
   font-family: 'Montserrat', sans-serif;
-  color: %$font-gray;
+  color: $font-gray;
 }
 
 a {
@@ -42,6 +42,12 @@ a {
   background-color: $primary-color;
   min-height: 100px;
   color: $white;
+}
+
+.click-phonecall {
+  border-radius: 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 7px;
 }
 
 .bottom-header {
@@ -196,6 +202,11 @@ a {
 
 footer {
   background: $primary-color;
+}
+
+.footer-link-2 {
+  background: $white;
+  color: $primary-color;
 }
 
 .footer-menu {

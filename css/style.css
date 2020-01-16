@@ -3,7 +3,7 @@
 body {
   background: gainsboro;
   font-family: 'Montserrat', sans-serif;
-  color: % #414141; }
+  color: #414141; }
 
 a {
   text-decoration: none;
@@ -13,6 +13,11 @@ a {
   background-color: #08A0E3;
   min-height: 100px;
   color: #fff; }
+
+.click-phonecall {
+  border-radius: 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 7px; }
 
 .bottom-header {
   color: #fff;
@@ -160,6 +165,10 @@ a {
 
 footer {
   background: #08A0E3; }
+
+.footer-link-2 {
+  background: #fff;
+  color: #08A0E3; }
 
 .footer-menu {
   margin: 0 auto;

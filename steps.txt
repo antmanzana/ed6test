@@ -11,3 +11,6 @@
 11. gulp
 10. Reviewed the PSD file with the mock up.
 11. Create all the hmtl elements
+12. Include images
+13. Create Variables and Mixins
+14. Start editing the main sections begining with the layouts
