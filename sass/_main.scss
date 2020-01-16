@@ -3,6 +3,7 @@ $white: #fff;
 $primary-color: #08A0E3;
 $secondary-color: linear-gradient(-90deg, #0B65C2, $white);
 $background: gainsboro;
+$font-gray: #414141;
 
 /* Mixins */
 
@@ -14,9 +15,25 @@ $background: gainsboro;
    #{$prop}: #{$value};
 }
 
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin display-grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 body {
   background: $background;
   font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
 }
 
 .top-header {
@@ -27,8 +44,104 @@ body {
 
 .bottom-header {
   color: $white;
+  display: grid;
+
 }
 
 .bottom-header-main {
   background-color: $primary-color;
+  /* border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%; */
+  min-height: 500px;
+  @include display-grid-12;
+
+}
+
+.bottom-header-content {
+  grid-column: 1 / span 8;
+}
+
+.bottom-header-image {
+  grid-column: 9 / span 4;
+}
+
+.bottom-header-scroll {
+  grid-column: span 12;
+}
+
+.bottom-header-secondary {
+  color: $font-gray;
+  @include display-grid-12;
+}
+
+.secondary-info {
+  grid-column: span 4;
+  @include centered;
+  padding: 15px;
+}
+.main-cards {
+  background: $white;
+  color: $font-gray;
+}
+
+.main-cards h2 {
+  color: $primary-color;
+}
+
+.main-card-1 {
+  @include display-grid-12;
+}
+
+.main-card-1-content {
+  grid-column: span 5;
+}
+
+.main-card-1-content h2, p {
+  @include centered;
+}
+
+.main-card-1-image {
+  grid-column: span 7;
+  @include centered;
+}
+
+.main-card-2 {
+  @include display-grid-12;
+}
+
+  .main-card-2-image {
+  grid-column: 1 / span 6;
+  width: 100%;
+  @include centered;
+}
+
+.main-card-2-content {
+  grid-column: 7 / span 6;
+}
+
+.main-card-2-content h2, p {
+  @include centered;
+}
+
+.main-card-3 {
+  @include display-grid-12;
+}
+
+.main-card-3-content {
+  grid-column: 1 / span 6;
+}
+
+.main-card-3-image {
+  grid-column: 7 / span 6;
+  width: 100%;
+  @include centered;
+}
+
+
+
+.main-card-3-content h2, p {
+  @include centered;
+}
+
+form label {
+  visibility: hidden;
 }

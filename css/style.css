@@ -4,13 +4,109 @@ body {
   background: gainsboro;
   font-family: 'Montserrat', sans-serif; }
 
+a {
+  text-decoration: none;
+  color: #fff; }
+
 .top-header {
   background-color: #08A0E3;
   min-height: 100px;
   color: #fff; }
 
 .bottom-header {
-  color: #fff; }
+  color: #fff;
+  display: grid; }
 
 .bottom-header-main {
-  background-color: #08A0E3; }
+  background-color: #08A0E3;
+  /* border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%; */
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+.bottom-header-content {
+  grid-column: 1 / span 8; }
+
+.bottom-header-image {
+  grid-column: 9 / span 4; }
+
+.bottom-header-scroll {
+  grid-column: span 12; }
+
+.bottom-header-secondary {
+  color: #414141;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+.secondary-info {
+  grid-column: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px; }
+
+.main-cards {
+  background: #fff;
+  color: #414141; }
+
+.main-cards h2 {
+  color: #08A0E3; }
+
+.main-card-1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+.main-card-1-content {
+  grid-column: span 5; }
+
+.main-card-1-content h2, p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-card-1-image {
+  grid-column: span 7;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-card-2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+.main-card-2-image {
+  grid-column: 1 / span 6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-card-2-content {
+  grid-column: 7 / span 6; }
+
+.main-card-2-content h2, p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-card-3 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+
+.main-card-3-content {
+  grid-column: 1 / span 6; }
+
+.main-card-3-image {
+  grid-column: 7 / span 6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-card-3-content h2, p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+form label {
+  visibility: hidden; }
