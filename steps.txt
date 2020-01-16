@@ -10,4 +10,4 @@
 10. npm install in the root of proyect.
 11. gulp
 10. Reviewed the PSD file with the mock up.
-11.
+11. Create all the hmtl elements
