@@ -9,14 +9,6 @@ $light-gray: #EBEBEB;
 
 /* Mixins */
 
-@mixin css3-prefix($prop, $value) {
-   -webkit-#{$prop}: #{$value};
-   -moz-#{$prop}: #{$value};
-   -ms-#{$prop}: #{$value};
-   -o-#{$prop}: #{$value};
-   #{$prop}: #{$value};
-}
-
 @mixin centered {
   display: flex;
   align-items: center;
@@ -132,6 +124,11 @@ a {
 
 .main-card {
   border-bottom: 1px solid $light-gray;
+  @include centered;
+}
+
+.main-card-content {
+  padding: 20px;
 }
 
 .main-card-1 {
@@ -211,6 +208,11 @@ a {
   grid-row: 1 / span 1;
 }
 
+.image-center {
+  display: block;
+  margin:auto;
+}
+
 .main-card-4-image {
   grid-column: 1 / span 6;
   grid-row: 1 / span 1;
@@ -228,6 +230,7 @@ a {
   background: $white;
   @include display-grid-12
   grid-template-rows: auto 1fr;
+  padding: 20px;
 }
 
 .form-intro {
@@ -378,5 +381,21 @@ footer ul li:nth-child(1)::before {
   }
   .link-label {
     display: none;
+  }
+  .secondary-info {
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  .secondary-info-3 {
+    border-bottom: 0;
+  }
+
+  footer ul {
+    display: block;
+    text-align: center;
+  }
+
+  footer ul li::before {
+    content: "";
   }
 }
