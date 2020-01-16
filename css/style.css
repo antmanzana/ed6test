@@ -2,7 +2,8 @@
 /* Mixins */
 body {
   background: gainsboro;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  color: % #414141; }
 
 a {
   text-decoration: none;
@@ -57,7 +58,7 @@ a {
   grid-template-columns: repeat(12, 1fr); }
 
 .main-card-1-content {
-  grid-column: span 5; }
+  grid-column: 1 / span 5; }
 
 .main-card-1-content h2, p {
   display: flex;
@@ -65,7 +66,7 @@ a {
   justify-content: center; }
 
 .main-card-1-image {
-  grid-column: span 7;
+  grid-column: 6 / span 7;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -75,14 +76,14 @@ a {
   grid-template-columns: repeat(12, 1fr); }
 
 .main-card-2-image {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 7;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
 
 .main-card-2-content {
-  grid-column: 7 / span 6; }
+  grid-column: 8 / span 5; }
 
 .main-card-2-content h2, p {
   display: flex;
@@ -108,5 +109,45 @@ a {
   align-items: center;
   justify-content: center; }
 
-form label {
+.contact {
+  background: #fff; }
+
+.form {
+  background: gainsboro;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.form h3 {
+  color: #08A0E3;
+  font-weight: 700; }
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.form-fields input, textarea {
+  border-radius: 5px;
+  border: none; }
+
+.form-fields label {
   visibility: hidden; }
+
+footer {
+  background: #08A0E3; }
+
+footer ul {
+  list-style-type: none; }
+
+footer ul li::before {
+  content: "\2022";
+  color: #fff;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
+footer ul li:nth-child(1)::before {
+  content: ""; }
