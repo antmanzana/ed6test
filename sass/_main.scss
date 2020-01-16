@@ -1,7 +1,7 @@
 /* Variables */
 $white: #fff;
 $primary-color: #08A0E3;
-$secondary-color: linear-gradient(-90deg, #0B65C2, $white);
+$secondary-color: #0B65C2;
 $red-gradient: linear-gradient(-90deg, #FF3333, $white);
 $background: gainsboro;
 $font-gray: #414141;
@@ -25,6 +25,7 @@ $font-gray: #414141;
 @mixin display-grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
 }
 
 body {
@@ -42,12 +43,21 @@ a {
   background-color: $primary-color;
   min-height: 100px;
   color: $white;
+  position: relative;
+}
+
+.top-logo {
+  @include centered;
+  padding: 30px;
 }
 
 .click-phonecall {
   border-radius: 17px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 7px;
+  padding: 10px 16px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
 }
 
 .bottom-header {
@@ -65,11 +75,17 @@ a {
 }
 
 .bottom-header-content {
-  grid-column: 1 / span 8;
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 1;
+  padding: 25px;
 }
 
 .bottom-header-image {
-  grid-column: 9 / span 4;
+  grid-column: 8 / span 5;
+  grid-row: 1 / span 1;
+  width: 100%;
+  height: auto;
+  max-height: 450px;
 }
 
 .bottom-header-scroll {
@@ -79,13 +95,22 @@ a {
 .bottom-header-secondary {
   color: $font-gray;
   @include display-grid-12;
+  min-height: 180px;
 }
+
+
 
 .secondary-info {
   grid-column: span 4;
   @include centered;
   padding: 15px;
+  border-right: 2px solid $secondary-color;
 }
+
+.secondary-info-3 {
+  border-right: 0;
+}
+
 .main-cards {
   background: $white;
   color: $font-gray;
@@ -101,6 +126,7 @@ a {
 
 .main-card-1-content {
   grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
 }
 
 .main-card-1-content h2, p {
@@ -109,8 +135,10 @@ a {
 
 .main-card-1-image {
   grid-column: 6 / span 7;
+  grid-row: 1 / span 1;
   @include centered;
   max-width: 100%;
+  height: auto;
 }
 
 .main-card-2 {
@@ -119,13 +147,16 @@ a {
 
   .main-card-2-image {
   grid-column: 1 / span 7;
+  grid-row: 1 / span 1;
   width: 100%;
   @include centered;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .main-card-2-content {
   grid-column: 8 / span 5;
+  grid-row: 1 / span 1;
 }
 
 .main-card-2-content h2, p {
@@ -137,11 +168,13 @@ a {
 }
 
 .main-card-3-content {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
 }
 
 .main-card-3-image {
-  grid-column: 7 / span 6;
+  grid-column: 6 / span 7;
+  grid-row: 1 / span 1;
   width: 100%;
   @include centered;
   max-width: 100%;
@@ -157,11 +190,14 @@ a {
 
 .main-card-4-content {
   grid-column: 7 / span 7;
+  grid-row: 1 / span 1;
 }
 
 .main-card-4-image {
   grid-column: 1 / span 6;
+  grid-row: 1 / span 1;
   width: 100%;
+  height: auto;
   @include centered;
   max-width: 100%;
 }
