@@ -1,0 +1,13 @@
+1. Read the README.md file
+2. Install Xcode
+3. GitHub, generate a SSH Key and add it to the ssh-agent
+4. Added SSH Key to my GitHub Account
+5. Forked the ed6test repo into my account
+6. Downloaded the repo in my local machine.
+7. Installed Homebrew
+8. Installed Node.js version v6.13.0
+9. Installed npm version 3.10.10
+10. npm install in the root of proyect.
+11. gulp
+10. Reviewed the PSD file with the mock up.
+11.
