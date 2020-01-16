@@ -2,6 +2,7 @@
 $white: #fff;
 $primary-color: #08A0E3;
 $secondary-color: linear-gradient(-90deg, #0B65C2, $white);
+$red-gradient: linear-gradient(-90deg, #FF3333, $white);
 $background: gainsboro;
 $font-gray: #414141;
 
@@ -103,6 +104,7 @@ a {
 .main-card-1-image {
   grid-column: 6 / span 7;
   @include centered;
+  max-width: 100%;
 }
 
 .main-card-2 {
@@ -113,6 +115,7 @@ a {
   grid-column: 1 / span 7;
   width: 100%;
   @include centered;
+  max-width: 100%;
 }
 
 .main-card-2-content {
@@ -135,9 +138,29 @@ a {
   grid-column: 7 / span 6;
   width: 100%;
   @include centered;
+  max-width: 100%;
 }
 
 .main-card-3-content h2, p {
+  @include centered;
+}
+
+.main-card-4 {
+  @include display-grid-12;
+}
+
+.main-card-4-content {
+  grid-column: 7 / span 7;
+}
+
+.main-card-4-image {
+  grid-column: 1 / span 6;
+  width: 100%;
+  @include centered;
+  max-width: 100%;
+}
+
+.main-card-4-content h2, p {
   @include centered;
 }
 
@@ -175,8 +198,15 @@ footer {
   background: $primary-color;
 }
 
+.footer-menu {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 footer ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer ul li::before {
