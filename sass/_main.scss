@@ -55,6 +55,11 @@ a {
   padding: 30px;
 }
 
+.top-logo img {
+  max-width: 190px;
+  height: auto;
+}
+
 .click-phonecall {
   border-radius: 17px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -232,7 +237,7 @@ a {
 .form {
   background: $background;
   max-width: 600px;
-  grid-column: 3 / span 9;
+  grid-column: 4 / span 9;
   border-radius: 15px;
   padding: 30px;
   margin-bottom: 30px;
@@ -244,18 +249,32 @@ a {
 }
 
 .form-fields {
-  @include display-grid-12;
+  max-width: 550px;
 }
-
-
 
 .form-fields input, textarea {
   border-radius: 5px;
   border: none;
 }
 
+.form-fields textarea {
+  resize: none;
+  width: 100%;
+}
+
 .form-fields label {
-  visibility: hidden;
+  display: none;
+}
+
+.form-fields button {
+  border: 0;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  border-radius: 22px;
+  padding: 7px 13px;
+  color: $white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 0.9rem;
 }
 
 footer {
@@ -273,6 +292,11 @@ footer {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
+}
+
+.footer-link-1 img {
+  max-width: 190px;
+  height: auto;
 }
 
 .footer-link-2 {
