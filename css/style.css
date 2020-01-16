@@ -1,2 +1,16 @@
+/* Variables */
+/* Mixins */
 body {
-  background: gainsboro; }
+  background: gainsboro;
+  font-family: 'Montserrat', sans-serif; }
+
+.top-header {
+  background-color: #08A0E3;
+  min-height: 100px;
+  color: #fff; }
+
+.bottom-header {
+  color: #fff; }
+
+.bottom-header-main {
+  background-color: #08A0E3; }
